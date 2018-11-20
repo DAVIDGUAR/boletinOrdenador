@@ -1,9 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package boletin_ordenador;
+
+import java.util.Scanner;
 
 /**
  *
@@ -11,11 +8,27 @@ package boletin_ordenador;
  */
 public class Boletin_ordenador {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        
+        Ordenador ordenador1 = new Ordenador(5,16,true,"b07",49,"Asus",15.9);
+        Ordenador ordenador2 = new Ordenador();
+        
+        Scanner ler = new Scanner(System.in);
+        
+        ordenador1.CalcularPrezo();
+        System.out.println("el precio seria = "+ordenador1.CalcularPrezo());
+        ordenador1.VisualizarAtributos();
+        System.out.println("el ordenador esta formado = "+ordenador1.VisualizarAtributos());
+        
+        
+        
+        
+        
+        
+        
+    
     }
     
 }
