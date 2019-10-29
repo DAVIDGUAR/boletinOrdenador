@@ -29,5 +29,10 @@ public class Monitor {
     public void setPulgadas(float pulgadas) {
         this.pulgadas = pulgadas;
     }
+
+    @Override
+    public String toString() {
+        return "Monitor{" + "marca=" + marca + "\n pulgadas=" + pulgadas + '}';
+    }
     
 }

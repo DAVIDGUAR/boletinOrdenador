@@ -5,14 +5,13 @@ package boletin_ordenador;
  * @author drodriguezguardiola
  */
 public class Cpu {
-    
-    private int nucleos,ram;
-    
-    
-    public Cpu(int nucleos,int ram){               //constructor
-       this.ram=ram;
-       this.nucleos=nucleos;
-        
+
+    private int nucleos, ram;
+
+    public Cpu(int n, int r) {               //constructor
+        this.ram = r;
+        this.nucleos = n;
+
     }
 
     public int getNucleos() {
@@ -23,14 +22,17 @@ public class Cpu {
         return ram;
     }
 
-    public void setNucleos(int nucleos) {
-        this.nucleos = nucleos;
+    public void setNucleos(int n) {
+        this.nucleos = n;
     }
 
-    public void setRam(int ram) {
-        this.ram = ram;
+    public void setRam(int r) {
+        this.ram = r;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return "Cpu{" + "nucleos=" + nucleos + ", ram=" + ram + '}';
+    }
+
 }

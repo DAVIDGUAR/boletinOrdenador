@@ -25,6 +25,11 @@ public class Teclado {
     public void setNumTeclas(int numTeclas) {
         this.numTeclas = numTeclas;
     }
+
+    @Override
+    public String toString() {
+        return "Teclado{" + "numTeclas=" + numTeclas + '}';
+    }
     
     
     
