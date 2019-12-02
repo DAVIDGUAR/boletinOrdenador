@@ -29,7 +29,7 @@ public class Ordenador {
     
     
 
-    public void CalcularPrezo() {
+    public float CalcularPrezo() {
         float prezo, inha;
 
         if (raton.isInhalambrico()) {
@@ -38,15 +38,13 @@ public class Ordenador {
         } else {
             inha = 1f;
         }
-        
-        prezo = (procesador.getNucleos() + (procesador.getRam() * 5) + inha + (teclas.getNumTeclas() * 0.7f) + (pantalla.getPulgadas() * 12));
+       
+      return prezo = procesador.getNucleos() + procesador.getRam() * 5 + inha + teclas.getNumTeclas() * 0.7f + pantalla.getPulgadas() * 12;
     }
 
     public void VisualizarAtributos() {
-        String atributos;
-
-       // atributos=nucleos+ram+inhalambrico,modelo,numTeclas,marca,pulgadas;
-      //  System.out.println("nucleos = "+ordenador1.getNucleos+ "\nram = "+ordenador1.getRam+ "\n inhalambrico = "+ordenador1.getnumTeclas+);
+        System.out.println("Procesador " + procesador+ ", raton=" + raton+ ", teclas=" + teclas + ", pantalla=" + pantalla);
+        
     }
 
     @Override
